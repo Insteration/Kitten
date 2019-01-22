@@ -19,70 +19,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, kittens!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeL-4V-gSR">
-                                <rect key="frame" x="16" y="37" width="288" height="20.5"/>
+                                <rect key="frame" x="16" y="37" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="8hw-3V-fMZ">
-                                <rect key="frame" x="16" y="65.5" width="288" height="187.5"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Cat1" translatesAutoresizingMaskIntoConstraints="NO" id="8hw-3V-fMZ">
+                                <rect key="frame" x="16" y="66" width="288" height="187"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-HA-zX6">
                                 <rect key="frame" x="16" y="261" width="288" height="30"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="pass" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvB-eu-QOR">
                                 <rect key="frame" x="16" y="299" width="288" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPy-72-wad">
                                 <rect key="frame" x="16" y="337" width="288" height="30"/>
                                 <state key="normal" title="Sign Up"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eLB-48-WHn">
-                                <rect key="frame" x="16" y="375" width="288" height="128"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KEU-nx-kxc">
-                                        <rect key="frame" x="0.0" y="0.0" width="144" height="128"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="80o-g0-4iD">
-                                        <rect key="frame" x="144" y="0.0" width="144" height="128"/>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPj-Vo-dLA">
-                                <rect key="frame" x="16" y="511" width="288" height="37"/>
+                                <rect key="frame" x="16" y="375" width="288" height="37"/>
                                 <state key="normal" title="Sign In"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-kitten" translatesAutoresizingMaskIntoConstraints="NO" id="Pvx-hW-JaK">
+                                <rect key="frame" x="16" y="420" width="288" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yj0-HA-zX6" firstAttribute="top" secondItem="8hw-3V-fMZ" secondAttribute="bottom" constant="8" symbolic="YES" id="0fG-1O-Mbq"/>
                             <constraint firstItem="TeL-4V-gSR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="32R-Mu-iDQ"/>
                             <constraint firstItem="8hw-3V-fMZ" firstAttribute="leading" secondItem="yj0-HA-zX6" secondAttribute="leading" id="3le-tT-QIy"/>
-                            <constraint firstItem="dPj-Vo-dLA" firstAttribute="top" secondItem="eLB-48-WHn" secondAttribute="bottom" constant="8" symbolic="YES" id="8Sc-fv-abG"/>
+                            <constraint firstItem="Pvx-hW-JaK" firstAttribute="leading" secondItem="dPj-Vo-dLA" secondAttribute="leading" id="5QA-E3-teN"/>
+                            <constraint firstAttribute="bottom" secondItem="Pvx-hW-JaK" secondAttribute="bottom" constant="20" symbolic="YES" id="Cbn-qw-BUH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dPj-Vo-dLA" secondAttribute="bottom" constant="156" id="FEm-0x-WpV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qPy-72-wad" secondAttribute="bottom" constant="201" id="Fui-JG-Su0"/>
                             <constraint firstItem="yj0-HA-zX6" firstAttribute="trailing" secondItem="NvB-eu-QOR" secondAttribute="trailing" id="FvU-pb-Hka"/>
                             <constraint firstItem="NvB-eu-QOR" firstAttribute="top" secondItem="yj0-HA-zX6" secondAttribute="bottom" constant="8" symbolic="YES" id="GRg-Tq-svg"/>
                             <constraint firstItem="TeL-4V-gSR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IKx-Cb-m4e"/>
-                            <constraint firstItem="eLB-48-WHn" firstAttribute="leading" secondItem="dPj-Vo-dLA" secondAttribute="leading" id="J64-85-iJ6"/>
+                            <constraint firstItem="Pvx-hW-JaK" firstAttribute="top" secondItem="dPj-Vo-dLA" secondAttribute="bottom" constant="8" symbolic="YES" id="Lg6-DY-cWf"/>
                             <constraint firstItem="NvB-eu-QOR" firstAttribute="trailing" secondItem="qPy-72-wad" secondAttribute="trailing" id="Mjw-Vd-975"/>
                             <constraint firstItem="8hw-3V-fMZ" firstAttribute="top" secondItem="TeL-4V-gSR" secondAttribute="bottom" constant="8" symbolic="YES" id="OYX-PY-EaT"/>
                             <constraint firstItem="TeL-4V-gSR" firstAttribute="trailing" secondItem="8hw-3V-fMZ" secondAttribute="trailing" id="RFM-H0-eYR"/>
-                            <constraint firstItem="eLB-48-WHn" firstAttribute="leading" secondItem="qPy-72-wad" secondAttribute="leading" id="SdJ-xc-iSe"/>
                             <constraint firstItem="TeL-4V-gSR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XwK-0B-wOc"/>
-                            <constraint firstItem="eLB-48-WHn" firstAttribute="top" secondItem="qPy-72-wad" secondAttribute="bottom" constant="8" symbolic="YES" id="bw3-OQ-Jjl"/>
                             <constraint firstItem="NvB-eu-QOR" firstAttribute="leading" secondItem="qPy-72-wad" secondAttribute="leading" id="ddo-or-fxa"/>
-                            <constraint firstItem="eLB-48-WHn" firstAttribute="trailing" secondItem="dPj-Vo-dLA" secondAttribute="trailing" id="iEn-Aa-H6V"/>
+                            <constraint firstItem="dPj-Vo-dLA" firstAttribute="top" secondItem="qPy-72-wad" secondAttribute="bottom" constant="8" symbolic="YES" id="h73-Wv-jAw"/>
                             <constraint firstItem="8hw-3V-fMZ" firstAttribute="trailing" secondItem="yj0-HA-zX6" secondAttribute="trailing" id="ihg-kw-xlI"/>
+                            <constraint firstItem="dPj-Vo-dLA" firstAttribute="leading" secondItem="qPy-72-wad" secondAttribute="leading" id="jZD-Wj-64s"/>
                             <constraint firstItem="TeL-4V-gSR" firstAttribute="leading" secondItem="8hw-3V-fMZ" secondAttribute="leading" id="kLM-2g-pIo"/>
-                            <constraint firstItem="eLB-48-WHn" firstAttribute="trailing" secondItem="qPy-72-wad" secondAttribute="trailing" id="kjk-bs-w3l"/>
+                            <constraint firstItem="dPj-Vo-dLA" firstAttribute="trailing" secondItem="qPy-72-wad" secondAttribute="trailing" id="lWg-RI-t22"/>
                             <constraint firstItem="qPy-72-wad" firstAttribute="top" secondItem="NvB-eu-QOR" secondAttribute="bottom" constant="8" symbolic="YES" id="oDp-Xn-P6l"/>
-                            <constraint firstAttribute="bottom" secondItem="dPj-Vo-dLA" secondAttribute="bottom" constant="20" symbolic="YES" id="pld-2s-FU1"/>
+                            <constraint firstItem="Pvx-hW-JaK" firstAttribute="trailing" secondItem="dPj-Vo-dLA" secondAttribute="trailing" id="rC0-uw-vGF"/>
                             <constraint firstItem="yj0-HA-zX6" firstAttribute="leading" secondItem="NvB-eu-QOR" secondAttribute="leading" id="rNY-5Z-5qF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -138,4 +130,8 @@
             <point key="canvasLocation" x="2678" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cat1" width="500" height="375"/>
+        <image name="login-kitten" width="440" height="220"/>
+    </resources>
 </document>
